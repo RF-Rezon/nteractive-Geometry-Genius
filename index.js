@@ -73,7 +73,7 @@ let mathOperationThree = function (width, length) {
 let fuctions_caller_fuction = function (targetBtn, width, length, targetPropety) {
   targetBtn.addEventListener("click", function () {
 
-    try{
+    try{  //Using try catch block for error handenig 
         if (width.value == "" || length.value == "") throw "Inputs shouldn't empty. Fill it please.";
         if(width.value <= 0 || length.value <= 0) throw "Invalid input. Please input greater than 0";
 
