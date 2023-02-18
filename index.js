@@ -1,4 +1,4 @@
-
+// Get ALL ELEMENTS FORM HTML CODE
 let triWidth = document.querySelector("#triWidth");
 let triLength = document.querySelector("#triLength");
 let triButton = document.querySelector("#btnTri");
@@ -27,6 +27,8 @@ let cards = document.getElementsByName("kalar");
 const message = document.getElementById("p01");
 message.innerHTML = "";
 
+// COLORIZE ENVIRONMENT
+
 for (var i = 0; i < cards.length; i++) {
   cards[i].onmouseover = function () {
     var color = "#" + Math.floor(Math.random() * 16777215).toString(16);
@@ -36,6 +38,8 @@ for (var i = 0; i < cards.length; i++) {
     this.style["-moz-box-shadow"] = colorString;
   };
 }
+
+// FIRST LAYER FUNCTION  
 
 let bigX = function (name, final) {
   let div = document.createElement("div");
@@ -50,6 +54,8 @@ let bigX = function (name, final) {
   containerDiv.appendChild(div);
 };
 
+// MID-RANGE FUNCTIONS
+
 let mathOperationOne = function (width, length) {
   return +width.value * +length.value;
 };
@@ -60,6 +66,9 @@ let mathOperationThree = function (width, length) {
   let bigNum = Math.PI * +width.value * +length.value;
   return bigNum.toFixed(2);
 };
+
+
+// FUNCTIONS THAT CALL TOP FUNCTIOS
 
 let fuctions_caller_fuction = function (targetBtn, width, length, targetPropety) {
   targetBtn.addEventListener("click", function () {
@@ -83,12 +92,11 @@ let fuctions_caller_fuction = function (targetBtn, width, length, targetPropety)
           }
     }catch(ex){
         message.innerHTML = ex;
-    }
-   
-
-     
+    }     
   });
 };
+
+// FINAL CALL
 
 fuctions_caller_fuction(triButton, triWidth, triLength, "#triName");
 fuctions_caller_fuction(recButton, recWidth, recLength, "#recName");
