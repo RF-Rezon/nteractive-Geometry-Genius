@@ -55,20 +55,21 @@
                   <img class="my-3 p-2" src="./images/triangle.png" alt="" />
                 </div>
                 <div class="p-6">
-                  <h5 class="text-gray-900 text-xl font-bold mb-2">Triangle</h5>
+                  <h5 id="triName" class="text-gray-900 text-xl font-bold mb-2">Triangle</h5>
                   <p class="text-gray-700 text-base mb-4">Area (A) = 0.5 &#10005; b &#10005; h</p>
                   <div class="flex pb-5 justify-center">
                     <div class="flex items-center space-x-2 justify-center">
-                      <input type="number" class="bg-slate-100 px-4 w-1/2" placeholder="b" />
+                      <input id="triWidth" type="number" class="bg-slate-100 px-4 w-1/2" placeholder="b" />
                       <p>cm</p>
                     </div>
                     <div class="flex items-center space-x-2 justify-center">
-                      <input type="number" class="bg-slate-100 px-4 w-1/2" placeholder="h" />
+                      <input id="triLength" type="number" class="bg-slate-100 px-4 w-1/2" placeholder="h" />
                       <p>cm</p>
                     </div>
                   </div>
                   <a href="#">
                     <button
+                      id="btnTri"
                       type="button"
                       class="inline-block px-24 py-2.5 mt-4 bg-blue-400 text-white font-semibold text-base leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                     >
@@ -84,20 +85,21 @@
                   <img class="my-3 p-5" src="./images/rectangle.png" alt="" />
                 </div>
                 <div class="p-6">
-                  <h5 class="text-gray-900 text-xl font-bold mb-2">Rectangle</h5>
+                  <h5 id="recName" class="text-gray-900 text-xl font-bold mb-2">Rectangle</h5>
                   <p class="text-gray-700 text-base mb-4">Area (A) = w &#10005; I</p>
                   <div class="flex pb-5 justify-center">
                     <div class="flex items-center space-x-2 justify-center">
-                      <input type="number" class="bg-slate-100 px-4 w-1/2" placeholder="w" />
+                      <input id="recWidth" type="number" class="bg-slate-100 px-4 w-1/2" placeholder="w" />
                       <p>cm</p>
                     </div>
                     <div class="flex items-center space-x-2 justify-center">
-                      <input type="number" class="bg-slate-100 px-4 w-1/2" placeholder="l" />
+                      <input id="recLength" type="number" class="bg-slate-100 px-4 w-1/2" placeholder="l" />
                       <p>cm</p>
                     </div>
                   </div>
                   <a href="#">
                     <button
+                      id="btnRec"
                       type="button"
                       class="inline-block px-24 py-2.5 mt-4 bg-blue-400 text-white font-semibold text-base leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                     >
@@ -113,20 +115,21 @@
                   <img class="my-3 mt-8 p-5" src="./images/parallelogram.png" alt="" />
                 </div>
                 <div class="p-6">
-                  <h5 class="text-gray-900 text-xl font-bold mb-2">Parallelogram</h5>
+                  <h5 id="paraName" class="text-gray-900 text-xl font-bold mb-2">Parallelogram</h5>
                   <p class="text-gray-700 text-base mb-4">Area (A) = b &#10005; h</p>
                   <div class="flex pb-5 justify-center">
                     <div class="flex items-center space-x-2 justify-center">
-                      <input type="number" class="bg-slate-100 px-4 w-1/2" placeholder="b" />
+                      <input id="paraWidth" type="number" class="bg-slate-100 px-4 w-1/2" placeholder="b" />
                       <p>cm</p>
                     </div>
                     <div class="flex items-center space-x-2 justify-center">
-                      <input type="number" class="bg-slate-100 px-4 w-1/2" placeholder="h" />
+                      <input id="paraLength" type="number" class="bg-slate-100 px-4 w-1/2" placeholder="h" />
                       <p>cm</p>
                     </div>
                   </div>
                   <a href="#">
                     <button
+                      id="btnPara"
                       type="button"
                       class="inline-block px-24 py-2.5 mt-4 bg-blue-400 text-white font-semibold text-base leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                     >
@@ -143,22 +146,23 @@
                   <img class="my-3" src="./images/rhombus.png" alt="" />
                 </div>
                 <div class="p-6">
-                  <h5 class="text-gray-900 text-xl font-bold mb-2">Rhombbus</h5>
+                  <h5 id="rhombusName" class="text-gray-900 text-xl font-bold mb-2">Rhombbus</h5>
                   <p class="text-gray-700 text-base mb-4">
                     Area (A) = 0.5 &#10005; d<sub>1</sub> &#10005; d<sub>2</sub>
                   </p>
                   <div class="flex pb-5 justify-center">
                     <div class="flex items-center space-x-2 justify-center">
-                      <input type="number" class="bg-slate-100 px-4 w-1/2" placeholder="d1" />
+                      <input id="rhombusWidth" type="number" class="bg-slate-100 px-4 w-1/2" placeholder="d1" />
                       <p>cm</p>
                     </div>
                     <div class="flex items-center space-x-2 justify-center">
-                      <input type="number" class="bg-slate-100 px-4 w-1/2" placeholder="d2" />
+                      <input id="rhombusLength" type="number" class="bg-slate-100 px-4 w-1/2" placeholder="d2" />
                       <p>cm</p>
                     </div>
                   </div>
                   <a href="#">
                     <button
+                      id="btnRhombus"
                       type="button"
                       class="inline-block px-24 py-2.5 mt-4 bg-blue-400 text-white font-semibold text-base leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                     >
@@ -174,20 +178,21 @@
                   <img class="my-3 mt-4" src="./images/pentagon.png" alt="" />
                 </div>
                 <div class="p-6">
-                  <h5 class="text-gray-900 text-xl font-bold mb-2">Pentagon</h5>
+                  <h5 id="pantaName" class="text-gray-900 text-xl font-bold mb-2">Pentagon</h5>
                   <p class="text-gray-700 text-base mb-4">Area (A) = 0.5 &#10005; p &#10005; b</p>
                   <div class="flex pb-5 justify-center">
                     <div class="flex items-center space-x-2 justify-center">
-                      <input type="number" class="bg-slate-100 px-4 w-1/2" placeholder="p" />
+                      <input id="pantaWidth" type="number" class="bg-slate-100 px-4 w-1/2" placeholder="p" />
                       <p>cm</p>
                     </div>
                     <div class="flex items-center space-x-2 justify-center">
-                      <input type="number" class="bg-slate-100 px-4 w-1/2" placeholder="b" />
+                      <input id="pantaLength" type="number" class="bg-slate-100 px-4 w-1/2" placeholder="b" />
                       <p>cm</p>
                     </div>
                   </div>
                   <a href="#">
                     <button
+                      id="btnPanta"
                       type="button"
                       class="inline-block px-24 py-2.5 mt-4 bg-blue-400 text-white font-semibold text-base leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                     >
@@ -203,20 +208,21 @@
                   <img class="my-3 mt-6" src="./images/ellipse.png" alt="" />
                 </div>
                 <div class="p-6">
-                  <h5 class="text-gray-900 text-xl font-bold mb-2">Ellipse</h5>
+                  <h5 id="elliName" class="text-gray-900 text-xl font-bold mb-2">Ellipse</h5>
                   <p class="text-gray-700 text-base mb-4">Area (A) = &#960;ab</p>
                   <div class="flex pb-5 justify-center">
                     <div class="flex items-center space-x-2 justify-center">
-                      <input type="number" class="bg-slate-100 px-4 w-1/2" placeholder="a" />
+                      <input id="elliWidth" type="number" class="bg-slate-100 px-4 w-1/2" placeholder="a" />
                       <p>cm</p>
                     </div>
                     <div class="flex items-center space-x-2 justify-center">
-                      <input type="number" class="bg-slate-100 px-4 w-1/2" placeholder="b" />
+                      <input id="elliLength" type="number" class="bg-slate-100 px-4 w-1/2" placeholder="b" />
                       <p>cm</p>
                     </div>
                   </div>
                   <a href="#">
                     <button
+                      id="btnElli"
                       type="button"
                       class="inline-block px-24 py-2.5 mt-4 bg-blue-400 text-white font-semibold text-base leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                     >
@@ -232,7 +238,8 @@
         <div
           class="grow my-8 text-left p-7 m-4 rounded-lg shadow-lg border-blue-600 lg:w-1/3 self-center lg:self-start"
         >
-          <p id="sideTextArea"></p>
+          <p class="underline font-semibold text-lg">Area Calculation</p>
+          <p id="sideTextArea" class="font-semibold text-lg w-full"></p>
         </div>
       </div>
     </main>
